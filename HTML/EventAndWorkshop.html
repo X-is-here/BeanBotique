@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Event and Workshop</title>
+  </head>
+  <body>
+    <div class="main">
+      <section id="heading">
+        <nav class="navContainer">
+          <ul class="navBar left">
+            <li class="navButtom">
+              <a href="./homePage.html" class="navBtn">Home</a>
+            </li>
+            <li class="navButtom">
+              <a href="./coffeeSelection.html" class="navBtn">Selection</a>
+            </li>
+            <li class="navButtom">
+              <a href="./shopSection.html" class="navBtn">Shop</a>
+            </li>
+            <li class="navButtom">
+              <a href="./EventAndWorkshop.html" class="navBtn">Events & Workshops</a>
+            </li>
+          </ul>
+          <div class="navBar middle">
+            <form action="#">
+              <input type="search" name="search" placeholder="Search..">
+            </form>
+          </div>
+          <ul class="navBar right">
+            <li class="navButtom2">
+              <a href="./signUpForm.html" class="navBtn">Sign up/in</a>
+            </li>
+            <li class="navButtom2">
+              <a href="./shoppingCard.html" class="navBtn">Shopping Cart</a>
+            </li>
+            <li class="navButtom2">
+              <a href="./subscriptions.html" class="navBtn">Subscription</a>
+            </li>
+          </ul>
+          <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        </nav>
+      </section>
+      <section id="body">
+        <div class="eventWorkshopSection">
+          <h2 class="sectionTitle">Upcoming Events & Workshops</h2>
+          <div class="eventsContainer">
+            <div class="eventCard">
+              <div class="eventImageContainer">
+                <img src="../Image/ContentImages/Event1.png" alt="Event 1">
+              </div>
+              <div class="eventDetails">
+                <h3>Coffee Brewing Basics</h3>
+                <p>Date: September 15, 2024</p>
+                <p>Time: 10:00 AM - 12:00 PM</p>
+              </div>
+              <a href="./signUpForm.html" class="eventBtn">Register Now</a>
+            </div>
+            <div class="eventCard">
+              <div class="eventImageContainer">
+                <img src="../Image/ContentImages/Event2.png" alt="Event 2">
+              </div>
+              <div class="eventDetails">
+                <h3>Latte Art Workshop</h3>
+                <p>Date: September 22, 2024</p>
+                <p>Time: 2:00 PM - 4:00 PM</p>
+              </div>
+              <a href="./signUpForm.html" class="eventBtn">Register Now</a>
+            </div>
+            <div class="eventCard">
+              <div class="eventImageContainer">
+                <img src="../Image/ContentImages/Event3.png" alt="Event 3">
+              </div>
+              <div class="eventDetails">
+                <h3>Advanced Espresso Techniques</h3>
+                <p>Date: September 29, 2024</p>
+                <p>Time: 3:00 PM - 5:00 PM</p>
+              </div>
+              <a href="./signUpForm.html" class="eventBtn">Register Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="footer">
+        <div class="detailInfos">
+          <div class="contactDetails">
+            <div class="text"><h3>Contact Us</h3></div>
+            <div class="logo">
+              <a href="#" class="navBtn"><img src="../icons/facebook-brands-solid.svg" alt="logo" class="icons"></a>
+              <a href="#" class="navBtn"><img src="../icons/envelope-solid.svg" alt="logo" class="icons"></a>
+              <a href="#" class="navBtn"><img src="../icons/linkedin-brands-solid.svg" alt="logo" class="icons"></a>
+            </div>
+            <div class="logo">
+              <a href="#" class="navBtn">
+                <img src="../icons/square-instagram-brands-solid.svg" alt="logo" class="icons">
+              </a>
+              <a href="#" class="navBtn">
+                <img src="../icons/telegram-brands-solid.svg" alt="logo" class="icons">
+              </a>
+              <a href="#" class="navBtn">
+                <img src="../icons/x-twitter-brands-solid.svg" alt="logo" class="icons">
+              </a>
+            </div>
+          </div>
+          <div class="additionalInfo">
+            <h4 class="informations navBtn">Privacy Notice</h4>
+            <h4 class="informations navBtn">Report Abuse</h4>
+            <h4 class="informations navBtn">Announcement</h4>
+            <h4 class="informations navBtn">Terms and Services</h4>
+          </div>
+        </div>
+        <footer class="copyRight">
+          ©2024 Bean Botique Company. All right reserved.
+        </footer>
+      </section>
+    </div>
+    <script src="../JS/homePage.js"></script>
+    <script src="../JS/eventAndWorkshop.js"></script>
+  </body>
+</html>

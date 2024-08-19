@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="path/to/font-awesome/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <title>Sign Up form</title>
+  </head>
+  <body>
+    <div class="main">
+      <section id="heading">
+        <nav class="navContainer">
+          <ul class="navBar left">
+            <li class="navButtom">
+              <a href="./homePage.html" class="navBtn">Home</a>
+            </li>
+            <li class="navButtom">
+              <a href="./coffeeSelection.html" class="navBtn">Selection</a>
+            </li>
+            <li class="navButtom">
+              <a href="./shopSection.html" class="navBtn">Shop</a>
+            </li>
+            <li class="navButtom">
+              <a href="./EventAndWorkshop.html" class="navBtn"
+                >Events & Workshops</a
+              >
+            </li>
+          </ul>
+          <div class="navBar middle">
+            <form action="#">
+              <input type="search" name="search" placeholder="Search.." />
+            </form>
+          </div>
+          <ul class="navBar right">
+            <li class="navButtom2">
+              <a href="./signUpForm.html" class="navBtn">Sign up/in</a>
+            </li>
+            <li class="navButtom2">
+              <a href="./shoppingCard.html" class="navBtn">Shopping Cart</a>
+            </li>
+            <li class="navButtom2">
+              <a href="./subscriptions.html" class="navBtn">Subscription</a>
+            </li>
+          </ul>
+          <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        </nav>
+      </section>
+      <section id="body">
+        <div class="shoppingCartContainer">
+          <div class="thankYouMessage">
+            <img
+              src="../Image/ContentImages/thankyou.png"
+              alt="Error"
+              srcset=""
+            />
+          </div>
+          <div class="shoppingCart">
+            <div><h2>Shopping Cart</h2></div>
+            <ol class="jacques-francois-regular">
+              <li>Brew Maker P1</li>
+              <li>Hand Grinder P15</li>
+              <li>Coffee Bean P10</li>
+              <li>Large Container P8</li>
+            </ol>
+            <div><span>Total Cost: $90</span></div>
+            <div><a href="#" class="btn">Buy Now</a></div>
+          </div>
+        </div>
+      </section>
+      <section id="footer">
+        `
+        <div class="detailInfos">
+          <div class="contactDetails">
+            <div class="text"><h3>Contact Us</h3></div>
+            <div class="logo">
+              <a href="#" class="navBtn"
+                ><img src="../icons/facebook-brands-solid.svg" class="icons"
+              /></a>
+              <a href="#" class="navBtn"
+                ><img src="../icons/envelope-solid.svg" class="icons"
+              /></a>
+              <a href="#" class="navBtn"
+                ><img src="../icons/linkedin-brands-solid.svg" class="icons"
+              /></a>
+            </div>
+            <div class="logo">
+              <a href="#" class="navBtn">
+                <img
+                  src="../icons/square-instagram-brands-solid.svg"
+                  class="icons"
+                />
+              </a>
+              <a href="#" class="navBtn">
+                <img src="../icons/telegram-brands-solid.svg" class="icons" />
+              </a>
+              <a href="#" class="navBtn">
+                <img src="../icons/x-twitter-brands-solid.svg" class="icons" />
+              </a>
+            </div>
+          </div>
+          <div class="additionalInfo">
+            <h4 class="informations navBtn">Privacy Notice</h4>
+            <h4 class="informations navBtn">Report Abuse</h4>
+            <h4 class="informations navBtn">Announcement</h4>
+            <h4 class="informations navBtn">Terms and Services</h4>
+          </div>
+        </div>
+        <footer class="copyRight">
+          ©2024 Bean Boutique Company. All rights reserved.
+        </footer>
+      </section>
+      <script src="../JS/homePage.js"></script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Home</title>
+  </head>
+  <body>
+    <div class="main">
+      <section id="heading">
+        <nav class="navContainer">
+          <ul class="navBar left">
+            <li class="navButtom">
+              <a href="./homePage.html" class="navBtn">Home</a>
+            </li>
+            <li class="navButtom">
+              <a href="./coffeeSelection.html" class="navBtn">Selection</a>
+            </li>
+            <li class="navButtom">
+              <a href="./shopSection.html" class="navBtn">Shop</a>
+            </li>
+            <li class="navButtom">
+              <a href="./EventAndWorkshop.html" class="navBtn">
+                Events & Workshops</a>
+            </li>
+          </ul>
+          <div class="navBar middle">
+            <form action="#">
+              <input type="search" name="search" placeholder="Search..">
+            </form>
+          </div>
+          <ul class="navBar right">
+            <li class="navButtom2">
+              <a href="./signUpForm.html" class="navBtn">Sign up/in</a>
+            </li>
+            <li class="navButtom2">
+              <a href="./shoppingCard.html" class="navBtn">Shopping Cart</a>
+            </li>
+            <li class="navButtom2">
+              <a href="./subscriptions.html" class="navBtn">Subscription</a>
+            </li>
+          </ul>
+          <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        </nav>
+      </section>
+      <section id="body">
+        <div class="slideShow">
+          <div class="slide fade" onclick="navigateToShop()">
+            <img src="../Image/ContentImages/slide1.png" style="width: 100%" alt="shop">
+          </div>
+          <div class="slide fade" onclick="navigateToShop()">
+            <img src="../Image/ContentImages/slide2.png" style="width: 100%" alt="shop">
+          </div>
+          <div class="slide fade" onclick="navigateToShop()">
+            <img src="../Image/ContentImages/slide3.png" style="width: 100%" alt="shop">
+          </div>
+          <div style="text-align: center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+        <!-- To the Online Shop -->
+        <div class="container">
+          <div class="branding" style="background-color: #d2691e">
+            <h1 class="header jacques-francois-regular">Bean Boutique</h1>
+          </div>
+          <div class="content" style="background-color: #d47b3b">
+            <h2 class="slogan jacques-francois-regular">Brew to Perfection</h2>
+            <div><a href="./signUpForm.html" class="btn">Join Now</a></div>
+          </div>
+        </div>
+        <!-- To the Coffee Selection -->
+        <div class="container">
+          <div class="content" style="background-color: #60bad8">
+            <h2 class="slogan jacques-francois-regular">Summer-time Luxury</h2>
+            <div><a href="./coffeeSelection.html" class="btn">Buy Now</a></div>
+          </div>
+          <div class="branding" style="background-color: #add8e6">
+            <img
+              src="../Image/ContentImages/CoffeeSelectionImg.png"
+              alt="coffee"
+              class="homeContentCoffee">
+          </div>
+        </div>
+        <!-- To the Events page -->
+        <div class="container">
+          <div class="branding" style="background-color: #ac8968">
+            <img
+              src="../Image/ContentImages/MeetWithOthers.png"
+              alt="event"
+              class="homeContentEvent">
+          </div>
+          <div class="content" style="background-color: #c09e7f">
+            <h2 class="slogan jacques-francois-regular">Meet with others</h2>
+            <div><a href="./EventAndWorkshop.html" class="btn">Events</a></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="content" style="background-color: #36392e">
+            <h2 class="slogan jacques-francois-regular">
+              Our Location! Come join us!!
+            </h2>
+          </div>
+          <div class="branding" style="background-color: #ac8968">
+            <div id="map"></div>
+          </div>
+        </div>
+      </section>
+      <section id="footer">
+        <div class="detailInfos">
+          <!-- Logos -->
+          <div class="contactDetails">
+            <div class="text"><h3>Contact Us</h3></div>
+            <div class="logo">
+              <a href="#" class="navBtn">
+                <img src="../icons/facebook-brands-solid.svg" alt="logo" class="icons">
+              </a>
+              <a href="#" class="navBtn">
+                <img src="../icons/envelope-solid.svg" alt="logo"  class="icons">
+              </a>
+              <a href="#" class="navBtn">
+                <img src="../icons/linkedin-brands-solid.svg" alt="logo"  class="icons">
+              </a>
+            </div>
+            <div class="logo">
+              <a href="#" class="navBtn">
+                <img
+                  src="../icons/square-instagram-brands-solid.svg" alt="logo" 
+                  class="icons">
+              </a>
+              <a href="#" class="navBtn">
+                <img src="../icons/telegram-brands-solid.svg" alt="logo" class="icons">
+              </a>
+              <a href="#" class="navBtn">
+                <img src="../icons/x-twitter-brands-solid.svg" alt="logo"  class="icons">
+              </a>
+            </div>
+          </div>
+          <!-- Announcements -->
+          <div class="additionalInfo">
+            <h4 class="informations navBtn">Privacy Notice</h4>
+            <h4 class="informations navBtn">Report Abuse</h4>
+            <h4 class="informations navBtn">Announcement</h4>
+            <h4 class="informations navBtn">Terms and Services</h4>
+          </div>
+        </div>
+        <footer class="copyRight">
+          ©2024 Bean Botique Company. All right reserved.
+        </footer>
+      </section>
+      <script src="../JS/slideShow.js"></script>
+      <script src="../JS/homePage.js"></script>
+    </div>
+  </body>
+</html>
